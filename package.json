@@ -1,0 +1,23 @@
+{
+  "name": "js-intro-pairing-challenges",
+  "version": "1.0.0",
+  "description": "Instructions for this repo can be found at: https://l2c.northcoders.com/courses/intro/pairing-challenges",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/northcoders/js-intro-pairing-challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/northcoders/js-intro-pairing-challenges/issues"
+  },
+  "homepage": "https://github.com/northcoders/js-intro-pairing-challenges#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

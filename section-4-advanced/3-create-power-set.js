@@ -1,5 +1,3 @@
-const { check, runTest, skipTest } = require("../test-api/index.js");
-
 /*
 createPowerSet()
 
@@ -16,12 +14,8 @@ all the possible sub-arrays that can be constructed from 3 distinct elements
 There should be 2**3 = 8 different subsets in total
 
 You will need to write your own tests for this task to prove your function is working correctly
-- use the runTest, skipTest functions that are available in this file
+- use the runTest, test functions that are available in this file
 */
+function createPowerSet() {}
 
-runTest(
-  "returns an array including empty array when passed an empty array",
-  function () {
-    check(createPowerSet([])).isEqualTo([[]]);
-  }
-);
+module.exports = createPowerSet;
