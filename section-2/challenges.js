@@ -47,19 +47,66 @@ function accessItem(arr, index) {
 
 function findDayOfTheWeek(num) {
   // This function should take a number from 1 to 7 inclusive, and return a string of the corresponding day of the week
+
+  
+
+  switch(num) {
+
+    case 1:
+    return "Monday";
+
+    case 2:
+    return "Tuesday";
+
+    case 3:
+    return "Wednesday";
+
+    case 4:
+    return "Thursday";
+
+    case 5:
+    return "Friday";
+
+    case 6:
+    return "Saturday";
+
+    case 7:
+    return "Sunday";
+    
+    default:
+    return "Not a valid input";
+  }
+
 }
 // BONUS POINTS: Try and solve this without using if statements! Hint: a 'lookup object' might be useful here.
 
 // QUESTION 6
 
-function createPercentage() {
+function createPercentage(a, b) {
   // This function should take two numbers, a and b, and return a string representing the value of a as a percentage of b
+
+  return Math.round((a / b) * 100).toString() + "%";
+
 }
 
 // QUESTION 7
 
-function extractNumber() {
+function extractNumber(str) {
   // This function should take a string containing a number wrapped in a pair of round brackets and return said number
+
+/*
+  // use match to find digits inside and convert to array   
+  const num = str.match(/\((\d+)\)/); 
+
+  // return if num contains something,else return 0
+  return num ? Number(num[1]) : 0;     
+   
+*/
+
+    let num = str.replace(/\S+\(/g, '');
+    let num2 = num.replace(/\)\S+/g, '');
+    return Number(num2)    
+
 }
 
 module.exports = {
