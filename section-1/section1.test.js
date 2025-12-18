@@ -18,19 +18,19 @@ describe("connectStrings()", () => {
 
 describe("expectWordEndsWithIng()", () => {
   test("should return true/false for a single word", function () {
-    test(expectWordEndsWithIng("doing")).toBe(true);
-    test(expectWordEndsWithIng("eating")).toBe(true);
-    test(expectWordEndsWithIng("bang")).toBe(false);
-    test(expectWordEndsWithIng("singer")).toBe(false);
+    expect(expectWordEndsWithIng("doing")).toBe(true);
+    expect(expectWordEndsWithIng("eating")).toBe(true);
+    expect(expectWordEndsWithIng("bang")).toBe(false);
+    expect(expectWordEndsWithIng("singer")).toBe(false);
   });
 });
 
 describe("addMissingPunctuation()", () => {
   test("returns the string with accurate punctuation", function () {
-    test(addMissingPunctuation("Hello there!")).toBe("Hello there!");
-    test(addMissingPunctuation("How's it going?")).toBe("How's it going?");
-    test(addMissingPunctuation("Yeah I'm good")).toBe("Yeah I'm good.");
-    test(addMissingPunctuation("Nice.")).toBe("Nice.");
+    expect(addMissingPunctuation("Hello there!")).toBe("Hello there!");
+    expect(addMissingPunctuation("How's it going?")).toBe("How's it going?");
+    expect(addMissingPunctuation("Yeah I'm good")).toBe("Yeah I'm good.");
+    expect(addMissingPunctuation("Nice.")).toBe("Nice.");
   });
 });
 
