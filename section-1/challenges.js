@@ -1,22 +1,29 @@
 // QUESTION 1
 
-function connectStrings() {
+function connectStrings(str1, str2) {
   // This function should take 2 strings and join them together with a space in between
   // return this newly created string
+  return str1 + " " + str2;
 }
 
 // QUESTION 2
 
-function expectWordEndsWithIng() {
+function expectWordEndsWithIng(str) {
   // take a string as an argument and return a boolean based on whether the word given ends with 'ing'
+  return str.endsWith("ing");
 }
 
 // QUESTION 3
 
-function addMissingPunctuation() {
+function addMissingPunctuation(string) {
   // take a string as an argument
   // each string may end with a full-stop, exclamation mark, or question mark
   // if the string doesn't end with punctuation, return the string with a full-stop added at the end. Otherwise, return the string unchanged
+  if (string.endsWith(".") || string.endsWith("?") || string.endsWith("!")) {
+    return string;
+  } else {
+    return string + ".";
+  }
 }
 
 // QUESTION 4
