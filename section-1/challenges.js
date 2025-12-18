@@ -28,8 +28,11 @@ function addMissingPunctuation(string) {
 
 // QUESTION 4
 
-function getRemainder() {
+function getRemainder(a, b) {
   // This function should take two arguments a and b, and return the remainder of the division of a / b
+
+    return a % b;
+
 }
 
 // QUESTION 5
@@ -37,6 +40,16 @@ function getRemainder() {
 function accessObject(obj, key) {
   // This function should take an object and a key as its arguments and return the value found at the provided key in the input object
   // If the key doesn't exist on the object, this function should return a string of "property not found"
+
+  if(obj[key]) {
+
+    return obj[key];
+
+  } else {
+
+    return "property not found";
+  }
+
 }
 
 // QUESTION 6
@@ -44,12 +57,29 @@ function accessObject(obj, key) {
 function makeAllWordsBold(arr) {
   // In markdown files (e.g. 'README.md') we can denote words as bold by putting two asterisks on either side of them, such as: **hello**
   // This function should take an array of strings as an argument and return an array consisting of the same strings but in bold - ie with two asterisks either side of them
+  return arr.map(bolden);
+
+  function bolden(str){
+    return "**" + str + "**";
+  }
+
 }
 
 // QUESTION 7
 
 function getPositiveNumbers(arr) {
   // This function should take an array of numbers as an argument and return an array containing all positive numbers from the input (retaining the order)
+
+  let newArray = [];
+
+  for (let i = 0; i < arr.length; i++){
+
+    if (arr[i] > 0) {
+        newArray.push(arr[i]);
+    }
+    
+  }
+  return newArray;
 }
 
 module.exports = {
